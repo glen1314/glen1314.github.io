@@ -93,7 +93,18 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        
+        <p>public class Main {<br>    public static void main(String[] args) {<br>        Person p = new Person();<br>        int n = 15; // n的值为15<br>        p.setAge(n); // 传入n的值<br>        System.out.println(p.getAge()); // 15<br>        n = 20; // n的值改为20<br>        System.out.println(p.getAge()); // 15还是20?<br>    }<br>}</p>
+<p>class Person {<br>    private int age;</p>
+<pre><code>public int getAge() &#123;
+    return this.age;
+&#125;
+
+public void setAge(int age) &#123;
+    this.age = age;
+&#125;
+</code></pre>
+<p>}</p>
+
       
     </div>
     <footer class="article-footer">
